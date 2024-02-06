@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f0f0;
+    /* Off-white background color */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    height: 70%;
+    width: 80%;
+    /* Adjust the width as desired */
+    background-color: #fff;
+    /* White background color */
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+}
+
+.left-side {
+    flex: 2;
+    background-color: #fff;
+    /* White background color */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.right-side {
+    flex: 1;
+    background-color: #ccc;
+    /* Grey background color */
+
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow-y: auto; /* Add scroll if needed */
+    padding: 10px; /* Add padding to space out forecast cards */
+
+}
+
+.forecast-card {
+    margin-bottom: 20px; /* Add margin to separate forecast cards */
+}
+
+#citySelect {
+    margin-top: 394px;
+    margin-left: 20px; /* Add margin from the right side of the card */
+    border: none; /* Remove borders */
+    padding: 5px; /* Add padding */
+    font-size: 16px; /* Adjust font size */
+    border-radius: 5px; /* Add border radius */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+#citySelect:hover {
+    background-color: #e0e0e0; /* Change background color on hover */
+}
+
+.weather-info {
+    text-align: center; 
+    position: relative; /* Add relative positioning */
+
+}
+
+.temperature {
+    font-size: 150px; /* Adjust the font size as desired */
+    margin-bottom: 20px; /* Add margin to separate from details */
+}
+
+.details {
+    font-size: 15px; /* Adjust the font size for details */
+    font-weight: bold;
+}
+
+.date {
+    text-align: center;
+    top: 10px;
+    position: relative;
+}
+.city {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-weight: bold;
+}
